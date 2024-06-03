@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.lxgw-wenkai-mono-tc-regular {
+  font-family: "LXGW WenKai Mono TC", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  color: goldenrod;
+  height: 100vh;
+  min-width: 100vw;
+  /* background-image: url("https://wallpapers.com/images/hd/black-gold-background-66howb9dgfqt96xk.jpg"); */
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.invitation-card {
+  height: 600px;
+  width: 400px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.invitation-card.active {
+  transform: perspective(1000px) rotateY(-180deg);
+}
+.card {
+  opacity: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 0px 20px -8px goldenrod;
+  transform: rotateY(180deg);
+}
+.card img {
+  border-radius: px;
+  height: 100%;
+  width: 100%;
+}
+.details {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+
+  padding: 60px 20px;
+  text-align: center;
+}
+#join {
+  font-size: 4rem;
+}
+.sevillana-regular {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#farewell {
+  margin-top: 15px;
+  font-size: 3rem;
+
+  color: black;
+}
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jaini-purva-regular {
+  font-family: "Jaini Purva", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sacramento-regular {
+  margin: 5px;
+  font-size: 1.6rem;
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chakra-petch-regular {
+  letter-spacing: 2px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.merienda-dept {
+  font-size: 15px;
+  letter-spacing: -1px;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#join,
+#venue {
+  margin: 0px 95px;
+  color: transparent;
+
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    goldenrod 15%,
+    goldenrod 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    goldenrod 78%,
+    #462523 100%
+  );
+  /* background-image: linear-gradient(to right, #462523 0, #462523 0, #cb9b51 22%,
+    #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%); */
+  -webkit-background-clip: text;
+}
+#venue {
+  margin: 15px 150px;
+}
+
+p {
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    goldenrod 15%,
+    goldenrod 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    goldenrod 78%,
+    #462523 100%
+  );
+  -webkit-background-clip: text;
+}
+.invite{
+  font-weight: 400;
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #f6e27a 15%,
+    #f6e27a 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #f6e27a 78%,
+    #462523 100%
+  );
+  -webkit-background-clip: text;
+}
+
+#farewell {
+  margin: 15px 45px 0px 50px;
+  background: linear-gradient(
+    45deg,
+    goldenrod,
+    #ff5500,
+    goldenrod,
+    #713835,
+    #fd8616,
+    goldenrod
+  );
+  background-size: 400%;
+
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 5px transparent;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.frontpage {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  box-shadow: 0px 0px 20px -8px goldenrod;
+  z-index: 1;
+  backface-visibility: hidden;
+}
+
+#background {
+  height: 100%;
+  width: 100%;
+}
+.frontpage-content {
+  padding: 0px 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+h1 {
+  font-size: 4.2rem;
+  position: absolute;
+  top: 146px;
+  left: 75px;
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    goldenrod 15%,
+    goldenrod 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    goldenrod 78%,
+    #462523 100%
+  );
+  -webkit-background-clip: text;
+}
+
+#name-box {
+  position: absolute;
+  margin-left: 50px;
+}
+label {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    goldenrod 15%,
+    goldenrod 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    goldenrod 78%,
+    #462523 100%
+  );
+  -webkit-background-clip: text;
+}
+input {
+  width: 220px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: goldenrod;
+}
+
+#line {
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    goldenrod 15%,
+    goldenrod 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    goldenrod 78%,
+    #462523 100%
+  );
+
+  top: 30px;
+  left: 75px;
+  height: 1px;
+  width: 180px;
+}
+button {
+  cursor: pointer;
+  margin: 30px 70px;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 2px solid goldenrod;
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    goldenrod 15%,
+    goldenrod 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    goldenrod 78%,
+    #462523 100%
+  );
+  -webkit-background-clip: text;
+}
+
+@media screen and (max-device-width: 390px) {
+  #background,
+  .card img {
+    height: 600px;
+    width: 390px;
+  }
+
+  .frontpage-content {
+    padding: 0px 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  #titleBox {
+    width: 90%;
+    height: 370px;
+    margin-left: 15px;
+  }
+  h1 {
+    left: 65px;
+  }
+  .details {
+    padding: 60px 20px;
+  }
+  #join {
+    margin: 0px 60px;
+  }
+  #venue {
+    margin: 15px 100px;
+  }
+  #farewell {
+    margin: 15px 9px 0px 11px;
+  }
+  .merienda-dept {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-device-width: 360px) {
+  .container {
+    height: 104vh;
+    width: 105vw;
+  }
+}
