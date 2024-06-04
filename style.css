@@ -19,10 +19,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: left;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .invitation-card {
   height: 600px;
@@ -299,13 +300,59 @@ button {
     #462523 100%
   );
   -webkit-background-clip: text;
+
+}
+
+@media screen and (max-device-width: 500px){
+  .container{
+    background-image: url("https://img.lovepik.com/background/20211021/large/lovepik-high-end-black-gold-background-image_401435265.jpg");
+  }
+
+}
+
+
+@media screen and (max-device-width: 430px) {
+  
+  .invitation-card{
+    transform: scaleX(0.9);
+  }
+  #background {
+    height: 600px;
+    width: 100%;
+  }
+  .card, .card img{
+    width: 95%;
+    height: 600px;
+  }
+  #join {
+    margin: 0px 30px;
+  }
+  #venue {
+    margin: 15px 80px;
+  }
+  #farewell {
+    margin: 15px 9px 0px 11px;
+  }
+  .merienda-dept {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-device-width: 390px) {
-  #background,
-  .card img {
+  .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #background {
     height: 600px;
-    width: 390px;
+    width: 100%;
+  }
+  .card, .card img{
+    width: 95%;
+    height: 600px;
   }
 
   .frontpage-content {
@@ -325,15 +372,7 @@ button {
   .details {
     padding: 60px 20px;
   }
-  #join {
-    margin: 0px 60px;
-  }
-  #venue {
-    margin: 15px 100px;
-  }
-  #farewell {
-    margin: 15px 9px 0px 11px;
-  }
+ 
   .merienda-dept {
     font-size: 13px;
   }
