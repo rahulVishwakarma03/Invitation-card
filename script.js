@@ -71,7 +71,7 @@ btn.addEventListener("click", (e) => {
     btn.removeAttribute("disabled");
     card.style.opacity = 1;
     invitationCard.classList.toggle("active");
-    username.innerText = `Dear ${input.value} sir/ma'am..`;
+    username.innerText = `Respected ${input.value} sir/ma'am..`;
     animation();
   }
 });
